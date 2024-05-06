@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="osVersion" value="Windows 11"/>
+    <parameter name="browserVersion" value="119.0"/>
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="ltDemo.LTParallel">
+        <methods>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- ltDemo.LTParallel -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="3" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="osVersion" value="Windows 10"/>
+    <parameter name="browserVersion" value="119.0"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="ltDemo.LTParallel">
+        <methods>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- ltDemo.LTParallel -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
